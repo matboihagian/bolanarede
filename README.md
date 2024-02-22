@@ -1,8 +1,10 @@
 # |Bola na rede
 ## Tarefas
 
-- [] Header
-- [] Apresentacao
-- [] Projetos
-- [] Conhecimentos
-- [] Orçamento
+- [ ] Header
+    -[x] HTML
+    -[ ] CSS
+- [ ] Apresentacao
+- [ ] Projetos
+- [ ] Conhecimentos
+- [ ] Orçamento
