@@ -3,7 +3,7 @@
 
 - [ ] Header
     - [x] HTML
-    - [ ] CSS
+    - [x] CSS
 - [ ] Apresentacao
 - [ ] Projetos
 - [ ] Conhecimentos
