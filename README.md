@@ -1,7 +1,7 @@
 # |Bola na rede
 ## Tarefas
 
-- [ ] Header
+- [x] Header
     - [x] HTML
     - [x] CSS
 - [ ] Apresentacao
