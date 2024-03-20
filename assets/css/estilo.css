@@ -1,26 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-header::before{
-    content: "";
-    background-color: black;
-    height: 00vh;
-    width: 00vw;
-    display: block;
-    position: absolute;
-    z-index: -10;
-}
+.header {
+    overflow: hidden;
+    background-color: #283618;
+    padding: 10px;
+    border-radius: 25px;
+  }
+
+  .header a {
+    font-family: "Fira Sans", sans-serif;
+    float: left;
+    color: #ffff;
+    text-align: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 30px; 
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .header-right {
+    float: right;
+
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+  }
 
 h1{
+    width: 53vw;
     font-family: "Fira Sans", sans-serif;
-    color:peru;
+    color:#EEEEEE;
     font-size: 60px;
     font-weight: 800;
 }
 
 h2{
+    font-family: "Fira Sans", sans-serif;
     font-size: 40px;
     font-weight: 600;
-    color: peru;
+    color: #EEEEEE;
 }
 
 body{
@@ -31,39 +62,93 @@ body{
     background-position: center center;
 }
 
-#goleiros{
-    background-color: peru;
-    height: 100vh;
+#goleiros ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
 }
 
 .card {
+    position: relative; /* Essencial para posicionar o texto sobre a imagem */
     max-width: 300px;
+    height: 400px;
+    overflow: hidden; /* Mantém o conteúdo dentro dos limites do cartão */
 }
+
 .image-wrapper {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    object-fit: cover;
+    transition: opacity ; /* Corrige a transição da opacidade */
 }
 
 .image-wrapper img {
-    object-fit: cover;
-}
-.card-text {
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: opacity .5s;
     width: 100%;
     height: 100%;
-    color: #fff;
-    background-color: rgba(0,0,0,0.5);
-    text-align: center;
+    object-fit: cover;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.card-text {
+    font-family: "Fira Sans", sans-serif;
+    position:absolute;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #EEEEEE; 
+    opacity: 0;
+    transition: opacity .5s;
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.goleiros ul{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
+
+.card:hover .card-text {
+    opacity: 1;
 }
+
+.card:hover .image-wrapper {
+    opacity: .2;
+}
+
+#secao-projetos ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+#secao-projetos li {
+    margin: 20px; /* Ajusta o espaçamento entre os itens da lista, se necessário */
+}
+
+.cards-container {
+    display: flex; /* Exibe os cards em linha */
+  }
+  #secao-projeto{
+    .card-container {
+        display: flex; /* Define o contêiner como um flex container */
+      }
+      
+      .card {
+        flex: 1; /* Distribui o espaço igualmente entre os cartões */
+        margin: 0 10px; /* Adiciona margem entre os cartões */
+        padding: 20px;
+        border: 1px solid #ccc; /* Border pode ser removida */
+        background-color: #f0f0f0; /* Cor de fundo do cartão */
+      }
+      
+      .card:hover {
+        opacity: 0.7; /* Define a opacidade ao passar o mouse */
+      }
+  }
+
+#formulario{
+    font-family: "Fira Sans", sans-serif;
+    background-color: #283618;
+    color:#EEEEEE;
+}
+  
