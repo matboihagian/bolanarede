@@ -146,11 +146,14 @@ ul {
       }
   }
 
+#teste{}
+
 #secao-cadastro{
     font-family: "Fira Sans", sans-serif;
-    background-color: black;
+    background-color:#283618;
     color:#EEEEEE;
-    height: 100vh;
+    height: 60vh;
+    width: 50vh;
     padding: 3rem;
 }
 #secao-cadastro h2{
